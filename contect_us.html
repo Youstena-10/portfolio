@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    :root {
+        --main-color: #6f42c1;
+        --light-bg: #f9f8ff;
+        --white: #fff;
+        --nav_color:#a29ab17e;
+        --dark-text: #1e1e60;
+        --gray-text: #666;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--light-bg);
+        margin: 0;
+        padding: 0;
+        color: var(--dark-text);
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: var(--nav_color);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--dark-text);
+    }
+    .logo img {
+        margin-right: 8px;
+    }
+    .logo .purple {
+        color: var(--main-color);
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: var(--dark-text);
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+    .nav-links li a:hover {
+        color: var(--main-color);
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+   .search-bar {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 25px 0 0 25px;
+}
+
+.search-bar button {
+  background-color: var(--main-color);
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-size: 14px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: var(--main-color);
+}
+    .cart, .user {
+        cursor: pointer;
+        position: relative;
+        font-size: 18px;
+    }
+   
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+    }
+
+    .contact-container {
+        background: var(--white);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        max-width: 900px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .contact-info h2 {
+        color: var(--main-color);
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        color: var(--gray-text);
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: var(--dark-text);
+        font-size: 14px;
+    }
+
+    .info-item i {
+        font-size: 18px;
+        margin-right: 10px;
+        color: var(--main-color);
+    }
+
+    /* Form */
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    input, textarea {
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+    input:focus, textarea:focus {
+        border-color: var(--main-color);
+        outline: none;
+        box-shadow: 0 0 5px rgba(111,66,193,0.3);
+    }
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+    button {
+        background: var(--main-color);
+        color: var(--white);
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    button:hover {
+        background: #5a2fa1;
+    }
+
+    @media (max-width: 768px) {
+        .contact-container {
+            grid-template-columns: 1fr;
+        }
+        .nav-links {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="./img/logo.png" alt="logo" width="60" height="50">
+        <span class="purple">S</span>NA<span class="purple">Y</span> B<span class="purple">OO</span>K
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product.html">Products</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        <li><a href="./orders.html">Orders</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./contact_us.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+       
+        <div class="cart">
+            <a href="./cart.html"><i style="color: #6f42c1;" class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="user">
+            <a href="./userProfile.html"><i style="color: var(--main-color);" class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</nav>
+
+<section class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Fill out the form or reach us through the following:</p>
+            <div class="info-item"><i class="fas fa-envelope"></i> email@snaybook.com</div>
+            <div class="info-item"><i class="fas fa-phone"></i> +20 123 456 789</div>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> Fayoum, Egypt</div>
+        </div>
+
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/admin.css"> 
+</head>
+<body>
+   <nav class="navbar">
+    <div class="logo"><span class="purple">S</span>NA<span class="purple">Y</span></div>
+
+    <ul class="nav-links">
+      
+      <li><a href="./product.html">Product</a></li>
+      
+    </ul>
+  </nav>
+
+    <main>
+        <div class="wrapper">
+            <h2>Book Management</h2>
+            
+            
+            <form id="bookForm">
+                <input type="text" id="title" placeholder="Book Name" required>
+                <input type="text" id="author" placeholder="Author  Name" required>
+                <input type="number" id="price" placeholder="Price" required>
+                <button type="submit" class="btn">Add Book</button>
+            </form>
+
+            
+            <table id="booksTable">
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Auther</th>
+                        <th>Price</th>
+                        <th>Procedures</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </main>
+        <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="logo-text">SNAY</h2>
+      <p>SNAY is an online bookstore website who sells all genres of books from around the world. Find your book here now</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section customer">
+      <h3>Customer Area</h3>
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Tracking List</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Don’t miss the newest books</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      
+    </div>
+  </div>
+</footer>
+    
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

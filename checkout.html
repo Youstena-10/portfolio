@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="./img/logo.png" alt="logo" width="100px" height="90px"/><span class="purple">S</span>NA<span class="purple">Y</span> B<span class="purple">OO</span>K</div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./orders.html">Orders</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./contect_us.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-right">
+            
+            <div class="cart">
+            <a href="./cart.html"><i style="color: #6f42c1;" class="fas fa-shopping-cart"></i></a>
+        </div>
+            <div class="user">
+                <a href="./userProfile.html"><i style="color: #6f42c1;" class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container my-5">
+        <div class="row checkout-container">
+        
+            <div class="col-md-7">
+                <h6 class="form-section-title">Billing Details</h6>
+                <form id="checkoutForm">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" id="fname" class="form-control" placeholder="First Name" required>
+                            <div id="fnameError" class="text-danger d-none">Not valid Name</div>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="lname" class="form-control" placeholder="Last Name" required>
+                            <div id="lnameError" class="text-danger d-none">Not valid Name</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="address" class="form-control" placeholder="Street Address" required>
+                        <div id="addressError" class="text-danger d-none">Not valid Address</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <select class="form-control" id="country" required>
+                                <option value="">Select Country</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="saudi arabia">Saudi Arabia</option>
+                                <option value="united states">United States</option>
+                                <option value="germany">Germany</option>
+                                <option value="canada">Canada</option>
+                                <option value="japan">Japan</option>
+                                <option value="france">France</option>
+                                <option value="united kingdom">United Kingdom</option>
+                                <option value="india">India</option>
+                                <option value="australia">Australia</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="town" class="form-control" placeholder="Town/City" required>
+                            <div id="townError" class="text-danger d-none">Not valid Town</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="number" id="zipcode" class="form-control" placeholder="ZIP Code" required>
+                            <div id="zipcodeError" class="text-danger d-none">Not valid ZIP Code</div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="number" id="phone" class="form-control" placeholder="Phone" required>
+                            <div id="phoneError" class="text-danger d-none">Not valid Phone Number</div>
+                        </div>
+                        <div class="col">
+                            <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+                            <div id="emailError" class="text-danger d-none">Not valid E-mail</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="note" class="form-control" placeholder="Order notes (optional)" rows="4"></textarea>
+                        <div id="noteError" class="text-danger d-none">Not valid</div>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div class="col-md-5 order-summary">
+                <h6 class="form-section-title">Your Order</h6>
+                <ul id="checkout-items" class="list-group mb-3"></ul>
+
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                        Subtotal <span id="subtotal">$0.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Shipping <span>$0.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        Coupon <span>-$10.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between order-total">
+                        Total Payment <span id="total">$0.00</span>
+                    </li>
+                </ul>
+
+                <button id="placeOrder" class="btn btn-place-order">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="logo-text">SNAY</h2>
+      <p>SNAY is an online bookstore website who sells all genres of books from around the world. Find your book here now</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section customer">
+      <h3>Customer Area</h3>
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Tracking List</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Don’t miss the newest books</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/checkout.js"></script>
+</body>
+</html>

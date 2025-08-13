@@ -1,0 +1,10 @@
+@import url(./all.css);
+
+.btn-place-order {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 8px;
+}

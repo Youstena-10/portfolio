@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sany Book</title>
+    
+    <link href="/Final_Project/img/download.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/home.css"/>
+</head>
+<body>
+  <nav class="navbar">
+        <div class="logo"><span class="purple"><img src="./img/logo.png" alt="logo" width="100px" height="100px"/>S</span>NA<span class="purple">Y</span> B<span class="purple">OO</span>K</div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./orders.html">Orders</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./contect_us.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-right">
+            <div>
+                <button class="bbtn"><a href="./login.html">Login</a></button>
+            <button class="bbtn"><a href="./regeister copy.html">Register</a></button>
+            </div>
+            <div class="cart">
+            <a href="./cart.html"><i style="color: #6f42c1;" class="fas fa-shopping-cart"></i></a>
+        </div>
+            <div class="user">
+                <a href="./userProfile.html"><i style="color: #6f42c1;" class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+<main>
+     
+    <section class="hero">
+        <div class="hero-text">
+            <h1>New Book</h1>
+        <p>Discover our latest collection of titles</p>
+            <button> <a href="./product.html">Shop Now</a></button>
+        </div>
+    </section>
+    
+    <section class="section1">
+        <h2>Top categories</h2>
+        <p>Explore this week's most popular genres
+        </p>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/dbb329ee30eba0c0efab46fbfd670d9f.jpg" width="300px" height="200px" alt="Fiction">
+                <h3>Technology</h3>
+                <button onclick="viewCategory('Technology')">View More</button>
+            </div>
+            <div class="card">
+                <img src="./img/cfd2de8a9ad647ccbac549e65417ca3c.jpg" width="300px" height="200px" alt="Fiction">
+                <h3>Psychology</h3>
+                <button onclick="viewCategory('Psychology')">View More</button>
+            </div>
+            <div class="card">
+                <img src="./img/265545db184a97f07e334d961bcc733b.jpg" width="300px" height="200px" alt="Fiction">
+                <h3>Fiction</h3>
+                <button onclick="viewCategory('Fiction')">View More</button>
+            </div>
+            <div class="card">
+                <img src="./img/7b641130a9de6a7a05111206ce2fcb8b.jpg" width="300px" height="200px" alt="Science">
+                <h3>Science</h3>
+                <button onclick="viewCategory('Science')">View More</button>
+            </div>
+            <div class="card">
+                <img src="./img/aeaaf13b22d2f0652f8f876f5afd91c6.jpg" width="300px" height="200px" alt="History">
+                <h3>History</h3>
+                <button onclick="viewCategory('History')">View More</button>
+            </div>
+        </div>
+    </section>
+        
+    <section class="section2">
+      <div class="right">
+        <h3>Your next journey begins with a book</h3>
+        <h3>Enjoy endless reading</h3>
+        <h3>Choose your book and start the adventure</h3>
+      </div>
+      <div class="left">
+         <img src="./img/52702b9eae8cbf0bf73149957bbf4b44.jpg"width="400px" height="400px" alt=""/>
+      </div>
+    </section>
+
+   <h2>Our Best Picks</h2>
+    <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" id="carouselInner">
+      </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+         </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+        </button>
+</div>
+
+</main>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="logo-text">SNAY</h2>
+      <p>SNAY is an online bookstore website who sells all genres of books from around the world. Find your book here now</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section customer">
+      <h3>Customer Area</h3>
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Tracking List</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Don’t miss the newest books</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      
+    </div>
+  </div>
+</footer>
+<script src="./js/home.js"></script>
+<script src="./js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

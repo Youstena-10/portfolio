@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awe">
+<style>
+    :root {
+        --main-color: #6f42c1;
+        --bg-color: #f9f9ff;
+        --nav-bg: #a29ab17e;
+        --text-dark: #1e1e60;
+        --text-light: #fff;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: var(--nav-bg);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--text-dark);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .logo img {
+        border-radius: 8px;
+    }
+
+    .logo .purple {
+        color: var(--main-color);
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+        color: var(--main-color);
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .search-bar {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        background-color: var(--main-color);
+        border: none;
+        padding: 8px 12px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .search-bar button:hover {
+        background-color: #5a34a0;
+    }
+
+    .cart i, .user i {
+        font-size: 18px;
+        color: var(--main-color);
+    }
+
+    
+    .about-section {
+        display: flex;
+        justify-content: center;
+        padding: 60px 20px;
+    }
+
+    .about-container {
+        max-width: 1100px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .about-content h2 {
+        color: var(--text-dark);
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .about-content p {
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+        color: var(--text-dark);
+        font-size: 15px;
+    }
+
+    .feature-item i {
+        font-size: 20px;
+        margin-right: 10px;
+        color: var(--main-color);
+    }
+
+    
+    @media (max-width: 768px) {
+        .about-container {
+            grid-template-columns: 1fr;
+        }
+        .nav-links {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="./img/logo.png" alt="logo" width="50" height="45">
+        <span class="purple">S</span>NA<span class="purple">Y</span> B<span class="purple">OO</span>K
+    </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product.html">Products</a></li>
+        <li><a href="./cart.html">Cart</a></li>
+        <li><a href="./orders.html">Orders</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./contect_us.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+        
+        <div class="cart">
+            <a href="./cart.html"><i  style="color: #6f42c1;" class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="user">
+            <a href="./userProfile.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="./img/5308ffac17f0f91a4601a0a9638a7d52.jpg" alt="About Us">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our website! We are passionate about bringing you the best books, resources, 
+                and knowledge to inspire and empower readers everywhere.  
+                Our goal is to create a community where people share and discover amazing reads.
+            </p>
+            <div class="features">
+                <div class="feature-item"><i class="fas fa-book"></i> Wide collection of books</div>
+                <div class="feature-item"><i class="fas fa-users"></i> Friendly community</div>
+                <div class="feature-item"><i class="fas fa-star"></i> High-quality recommendations</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

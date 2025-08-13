@@ -1,0 +1,6 @@
+@import url(./all.css);
+
+.btn-primary {
+    background-color: var(--main-color);
+    border: none;
+}

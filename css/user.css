@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background-color: #a29ab17e;
+    width: 220px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    color: #1e1e60;
+}
+
+.sidebar .nav-link {
+    color: #1e1e60;
+    margin-bottom: 5px;
+}
+
+.sidebar .nav-link:hover {
+    color: #8a1ba0;
+}
+
+.sidebar .nav-link.active {
+    background-color: #e7f1ff;
+    border-radius: 5px;
+    color: #007bff;
+}
+
+.content h4 {
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 10px;
+    
+}
